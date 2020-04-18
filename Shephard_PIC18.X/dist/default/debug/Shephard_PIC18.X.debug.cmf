@@ -11,73 +11,73 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$dist/default/debug/Shephard_PIC18.X.debug.o
-ivt0x8 CODE 0 8 8 12 1
-cinit CODE 0 10F12 10F12 74 1
-text0 CODE 0 11216 11216 24 1
-text1 CODE 0 10636 10636 5B4 1
-text2 CODE 0 10BEA 10BEA 114 1
-text3 CODE 0 10DB4 10DB4 B0 1
-text4 CODE 0 10F86 10F86 74 1
-text5 CODE 0 10E64 10E64 AE 1
-text6 CODE 0 10CFE 10CFE B6 1
-text7 CODE 0 11304 11304 12 1
-text8 CODE 0 112B2 112B2 16 1
-text9 CODE 0 1125E 1125E 20 1
-nvCOMRAM COMRAM 1 54B 54B 2 1
-text10 CODE 0 11194 11194 2E 1
-text11 CODE 0 11114 11114 4E 1
-text12 CODE 0 112C8 112C8 14 1
-text13 CODE 0 1123A 1123A 24 1
-text14 CODE 0 10FFA 10FFA 6C 1
-text15 CODE 0 1127E 1127E 1C 1
-text16 CODE 0 111F0 111F0 26 1
-text17 CODE 0 11334 11334 4 1
-text18 CODE 0 1132C 1132C 8 1
-text19 CODE 0 11316 11316 C 1
-text20 CODE 0 112DC 112DC 14 1
-text21 CODE 0 112F0 112F0 14 1
-text22 CODE 0 11066 11066 5C 1
-text23 CODE 0 110C2 110C2 52 1
-text24 CODE 0 1129A 1129A 18 1
-text25 CODE 0 111C2 111C2 2E 1
-text26 CODE 0 11162 11162 32 1
-text27 CODE 0 11338 11338 2 1
-text28 CODE 0 10000 10000 636 1
-nvBANK5 BANK5 1 5F5 5F5 6 1
-idataCOMRAM CODE 0 1133A 1133A 1 1
-cstackCOMRAM COMRAM 1 501 501 26 1
-cstackBANK5 BANK5 1 5B3 5B3 38 1
-bssBANK5 BANK5 1 560 560 53 1
-idataBANK5 CODE 0 11322 11322 A 1
-dataBANK5 BANK5 1 5EB 5EB A 1
-dataCOMRAM COMRAM 1 54D 54D 1 1
-bssBIGRAM BIGRAM 1 5FB 5FB 640 1
-bssCOMRAM COMRAM 1 527 527 24 1
-mediumconst MEDIUMCONST 0 F7DE F7DE 822 1
-$/tmp/xcxU4pMa9.o
+$/tmp/xcYh7xgka.o
 idloc IDLOC 0 200000 200000 20 1
 init CODE 0 1A 1A 4 1
 reset_vec CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 A 1
+$dist/default/debug/Shephard_PIC18.X.debug.o
+ivt0x8 CODE 0 8 8 12 1
+cinit CODE 0 10DC6 10DC6 74 1
+text0 CODE 0 110EA 110EA 22 1
+text1 CODE 0 10648 10648 45C 1
+text2 CODE 0 10AA4 10AA4 112 1
+text3 CODE 0 10C6C 10C6C AE 1
+text4 CODE 0 10E3A 10E3A 72 1
+text5 CODE 0 10D1A 10D1A AC 1
+text6 CODE 0 10BB6 10BB6 B6 1
+text7 CODE 0 111A8 111A8 10 1
+text8 CODE 0 11140 11140 16 1
+text9 CODE 0 11156 11156 16 1
+nvCOMRAM COMRAM 1 546 546 2 1
+text10 CODE 0 11044 11044 2E 1
+text11 CODE 0 10FC6 10FC6 4C 1
+text12 CODE 0 1116C 1116C 14 1
+text13 CODE 0 110C6 110C6 24 1
+text14 CODE 0 10EAC 10EAC 6C 1
+text15 CODE 0 1110C 1110C 1C 1
+text16 CODE 0 110A0 110A0 26 1
+text17 CODE 0 111D6 111D6 4 1
+text18 CODE 0 111CE 111CE 8 1
+text19 CODE 0 111B8 111B8 C 1
+text20 CODE 0 11180 11180 14 1
+text21 CODE 0 11194 11194 14 1
+text22 CODE 0 10F18 10F18 5C 1
+text23 CODE 0 10F74 10F74 52 1
+text24 CODE 0 11128 11128 18 1
+text25 CODE 0 11072 11072 2E 1
+text26 CODE 0 11012 11012 32 1
+text27 CODE 0 111DA 111DA 2 1
+text28 CODE 0 10000 10000 648 1
+nvBANK5 BANK5 1 5F3 5F3 3 1
+idataCOMRAM CODE 0 111DC 111DC 1 1
+cstackCOMRAM COMRAM 1 501 501 32 1
+cstackBANK5 BANK5 1 5CD 5CD 1C 1
+bssBANK5 BANK5 1 560 560 6D 1
+idataBANK5 CODE 0 111C4 111C4 A 1
+dataBANK5 BANK5 1 5E9 5E9 A 1
+dataCOMRAM COMRAM 1 548 548 1 1
+bssBIGRAM BIGRAM 1 5F6 5F6 640 1
+bssCOMRAM COMRAM 1 533 533 13 1
+mediumconst MEDIUMCONST 0 BFDE BFDE 4022 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM C3B-24FF 1
+RAM C36-24FF 1
 SFR 0-4FF 1
 CONST 4-7 1
-CONST 1E-F7DD 1
-CONST 1133B-1FFFF 1
-STACK C3B-24FF 1
-SMALLCONST 2500-F7DD 1
-SMALLCONST 1133B-1FFFF 1
+CONST 1E-BFDD 1
+CONST 111DD-1FFFF 1
+STACK C36-24FF 1
+SMALLCONST 2500-BFDD 1
+SMALLCONST 111DD-1FFFF 1
 CODE 4-7 1
-CODE 1E-F7DD 1
-CODE 1133B-1FFFF 1
-BANK12 C3B-CFF 1
+CODE 1E-BFDD 1
+CODE 111DD-1FFFF 1
+BANK12 C36-CFF 1
 BANK13 D00-DFF 1
 BANK14 E00-EFF 1
 BANK15 F00-FFF 1
@@ -102,12 +102,12 @@ BANK33 2100-21FF 1
 BANK34 2200-22FF 1
 BANK35 2300-23FF 1
 BANK36 2400-24FF 1
-BIGRAM 54E-55F 1
-BIGRAM C3B-24FF 1
-COMRAM 54E-55F 1
+BIGRAM 549-55F 1
+BIGRAM C36-24FF 1
+COMRAM 549-55F 1
 CONFIG 30000A-300011 1
 EEDATA 380000-3803FF 1
-MEDIUMCONST 2500-F7DD 1
+MEDIUMCONST 2500-BFDD 1
 MEDIUMCONST 12500-1FFFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -123,390 +123,380 @@ MEDIUMCONST 12500-1FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/debug/Shephard_PIC18.X.debug.o
-10000 text28 CODE >114:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10000 text28 CODE >116:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10012 text28 CODE >117:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1001E text28 CODE >118:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10034 text28 CODE >119:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10038 text28 CODE >122:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10050 text28 CODE >123:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1006C text28 CODE >125:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10084 text28 CODE >126:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-100A0 text28 CODE >128:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-100B8 text28 CODE >129:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-100D4 text28 CODE >131:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-100EC text28 CODE >132:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10108 text28 CODE >134:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10120 text28 CODE >135:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1013C text28 CODE >137:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10154 text28 CODE >138:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10170 text28 CODE >140:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10188 text28 CODE >141:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-101A4 text28 CODE >143:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-101BC text28 CODE >144:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-101D8 text28 CODE >147:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1046C text28 CODE >150:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1049C text28 CODE >151:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-104BA text28 CODE >153:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-104EA text28 CODE >154:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10508 text28 CODE >156:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1050C text28 CODE >157:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1052A text28 CODE >158:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1052E text28 CODE >159:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1054C text28 CODE >161:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10576 text28 CODE >162:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10586 text28 CODE >163:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10586 text28 CODE >164:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-105A2 text28 CODE >166:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-105AE text28 CODE >168:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-105CE text28 CODE >169:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-105DE text28 CODE >170:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-105F0 text28 CODE >171:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-105F2 text28 CODE >172:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10608 text28 CODE >173:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10608 text28 CODE >185:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1061A text28 CODE >186:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10620 text28 CODE >189:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1062A text28 CODE >191:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10634 text28 CODE >193:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-11338 text27 CODE >189:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11338 text27 CODE >192:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11162 text26 CODE >176:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11162 text26 CODE >179:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11178 text26 CODE >181:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11192 text26 CODE >183:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-111C2 text25 CODE >127:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-111C2 text25 CODE >129:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-111D2 text25 CODE >132:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-111D4 text25 CODE >135:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-111D8 text25 CODE >136:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-111DE text25 CODE >139:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-111E0 text25 CODE >140:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-111E4 text25 CODE >144:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-111E8 text25 CODE >145:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-111EE text25 CODE >147:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-1129A text24 CODE >164:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-1129A text24 CODE >168:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-1129C text24 CODE >169:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-112AC text24 CODE >173:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-112B0 text24 CODE >174:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-110C2 text23 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
-110DA text23 CODE >61:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
-110F6 text23 CODE >63:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
-110FA text23 CODE >69:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
-11066 text22 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11066 text22 CODE >66:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-1106C text22 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11070 text22 CODE >70:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11074 text22 CODE >72:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11078 text22 CODE >74:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-1107C text22 CODE >76:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11080 text22 CODE >78:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11084 text22 CODE >80:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11088 text22 CODE >82:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-1108C text22 CODE >84:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11090 text22 CODE >86:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11094 text22 CODE >88:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11098 text22 CODE >90:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-1109C text22 CODE >92:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-110A0 text22 CODE >94:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-110A4 text22 CODE >96:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-110A8 text22 CODE >98:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-110AC text22 CODE >100:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-110B0 text22 CODE >102:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-110B4 text22 CODE >104:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-110B8 text22 CODE >106:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-110BC text22 CODE >108:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-110C0 text22 CODE >111:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-112F0 text21 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
-112F0 text21 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
-112F6 text21 CODE >65:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
-112FA text21 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
-112FE text21 CODE >71:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
-11302 text21 CODE >73:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
-112DC text20 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
-112DC text20 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
-112E2 text20 CODE >65:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
-112E6 text20 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
-112EA text20 CODE >71:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
-112EE text20 CODE >73:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
-11316 text19 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/dac1.c
-11316 text19 CODE >61:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/dac1.c
-1131C text19 CODE >63:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/dac1.c
-11320 text19 CODE >64:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/dac1.c
-1132C text18 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/fvr.c
-1132C text18 CODE >61:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/fvr.c
-11332 text18 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/fvr.c
-11334 text17 CODE >52:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
-11334 text17 CODE >55:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
-11336 text17 CODE >56:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
-111F0 text16 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
-111F0 text16 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
-111F6 text16 CODE >64:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
-111FA text16 CODE >66:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
-111FE text16 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
-11202 text16 CODE >70:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
-11206 text16 CODE >72:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
-1120A text16 CODE >74:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
-1120E text16 CODE >76:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
-11212 text16 CODE >79:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
-11214 text16 CODE >81:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
-1127E text15 CODE >65:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-1127E text15 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11284 text15 CODE >70:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11288 text15 CODE >72:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-1128C text15 CODE >74:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11290 text15 CODE >76:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11294 text15 CODE >78:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11298 text15 CODE >79:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-10FFA text14 CODE >55:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-10FFA text14 CODE >60:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-10FFE text14 CODE >61:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11002 text14 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11006 text14 CODE >67:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-1100A text14 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-1100E text14 CODE >69:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11012 text14 CODE >74:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11016 text14 CODE >75:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11018 text14 CODE >76:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-1101A text14 CODE >81:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-1101E text14 CODE >82:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11022 text14 CODE >83:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11026 text14 CODE >84:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-1102A text14 CODE >89:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11030 text14 CODE >90:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11034 text14 CODE >91:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11038 text14 CODE >92:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-1103C text14 CODE >97:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11042 text14 CODE >98:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11046 text14 CODE >99:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-1104A text14 CODE >100:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-1104E text14 CODE >105:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11050 text14 CODE >106:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11052 text14 CODE >107:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11054 text14 CODE >112:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11056 text14 CODE >113:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11058 text14 CODE >114:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-1105A text14 CODE >115:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-1105E text14 CODE >124:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-11064 text14 CODE >125:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
-1123A text13 CODE >81:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-1123A text13 CODE >84:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11240 text13 CODE >86:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11244 text13 CODE >88:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11248 text13 CODE >90:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-1124C text13 CODE >92:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11250 text13 CODE >94:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11254 text13 CODE >96:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11258 text13 CODE >98:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-1125C text13 CODE >99:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-112C8 text12 CODE >185:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-112C8 text12 CODE >186:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-112DA text12 CODE >187:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11114 text11 CODE >64:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11114 text11 CODE >69:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-1111A text11 CODE >72:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-1111E text11 CODE >75:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11122 text11 CODE >78:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11126 text11 CODE >81:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-1112A text11 CODE >84:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-1112C text11 CODE >87:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11148 text11 CODE >90:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-1114A text11 CODE >93:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-1115A text11 CODE >96:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11160 text11 CODE >97:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
-11194 text10 CODE >50:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11194 text10 CODE >52:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-11198 text10 CODE >53:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-1119C text10 CODE >54:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-111A0 text10 CODE >55:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-111A4 text10 CODE >56:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-111A8 text10 CODE >57:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-111AC text10 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-111B0 text10 CODE >59:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-111B4 text10 CODE >60:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-111B8 text10 CODE >61:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-111BC text10 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-111C0 text10 CODE >63:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
-1125E text9 CODE >131:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-1125E text9 CODE >134:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-1127C text9 CODE >135:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-112B2 text8 CODE >125:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-112B2 text8 CODE >128:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-112C6 text8 CODE >129:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11304 text7 CODE >113:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11308 text7 CODE >116:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-1130E text7 CODE >119:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11312 text7 CODE >122:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-11314 text7 CODE >123:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
-10CFE text6 CODE >7:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10CFE text6 CODE >12:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D04 text6 CODE >13:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D12 text6 CODE >14:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D1A text6 CODE >15:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D1E text6 CODE >17:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D2C text6 CODE >18:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D34 text6 CODE >19:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D46 text6 CODE >20:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D4A text6 CODE >21:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D4E text6 CODE >22:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D54 text6 CODE >23:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D56 text6 CODE >21:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D64 text6 CODE >26:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D7A text6 CODE >27:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D82 text6 CODE >28:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D88 text6 CODE >29:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D8E text6 CODE >31:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10D9E text6 CODE >32:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10DA6 text6 CODE >33:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10DB2 text6 CODE >34:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
-10E64 text5 CODE >7:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10E64 text5 CODE >13:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10E76 text5 CODE >14:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10E8C text5 CODE >15:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10E90 text5 CODE >16:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10E94 text5 CODE >17:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10E9E text5 CODE >18:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10EA0 text5 CODE >16:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10EAE text5 CODE >21:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10EB8 text5 CODE >22:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10ED6 text5 CODE >23:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10EE6 text5 CODE >24:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10EE8 text5 CODE >26:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10EF2 text5 CODE >27:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10EF8 text5 CODE >28:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10EF8 text5 CODE >29:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10F10 text5 CODE >30:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
-10F86 text4 CODE >15:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
-10F86 text4 CODE >119:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
-10F98 text4 CODE >121:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
-10FA6 text4 CODE >122:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
-10FB6 text4 CODE >123:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
-10FC0 text4 CODE >124:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
-10FCA text4 CODE >125:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
-10FE0 text4 CODE >128:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
-10FF8 text4 CODE >129:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
-10DB4 text3 CODE >91:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
-10DB4 text3 CODE >333:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
-10DC0 text3 CODE >335:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
-10DD0 text3 CODE >336:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
-10DF0 text3 CODE >337:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
-10E02 text3 CODE >338:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
-10E14 text3 CODE >339:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
-10E32 text3 CODE >353:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
-10E62 text3 CODE >354:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
-10BEA text2 CODE >15:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/rand.c
-10BEA text2 CODE >20:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/rand.c
-10CA2 text2 CODE >22:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/rand.c
-10CFC text2 CODE >23:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/rand.c
-10636 text1 CODE >204:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10636 text1 CODE >217:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10664 text1 CODE >218:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10686 text1 CODE >220:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10696 text1 CODE >221:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-106A0 text1 CODE >222:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-106A0 text1 CODE >224:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-106BE text1 CODE >225:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-106E0 text1 CODE >226:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10708 text1 CODE >227:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10732 text1 CODE >228:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1075A text1 CODE >229:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10780 text1 CODE >231:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10794 text1 CODE >232:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-107AA text1 CODE >233:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1080E text1 CODE >234:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10872 text1 CODE >235:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-108D6 text1 CODE >236:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10910 text1 CODE >237:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10928 text1 CODE >238:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1092E text1 CODE >239:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10938 text1 CODE >240:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1093E text1 CODE >243:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10944 text1 CODE >244:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10944 text1 CODE >245:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10956 text1 CODE >252:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10978 text1 CODE >253:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1097C text1 CODE >255:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10988 text1 CODE >257:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-109BE text1 CODE >258:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-109C2 text1 CODE >259:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-109C6 text1 CODE >260:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-109CA text1 CODE >261:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-109CE text1 CODE >262:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-109DA text1 CODE >266:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-109E6 text1 CODE >267:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-109EE text1 CODE >268:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10A4E text1 CODE >270:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10AB2 text1 CODE >272:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10B16 text1 CODE >273:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10B36 text1 CODE >275:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10B4E text1 CODE >276:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10B78 text1 CODE >277:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10B96 text1 CODE >280:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10B9E text1 CODE >303:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10BE2 text1 CODE >305:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10BE8 text1 CODE >307:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-11216 text0 CODE >309:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-11216 text0 CODE >312:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1121A text0 CODE >313:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1122C text0 CODE >318:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-1122E text0 CODE >322:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
-10F12 cinit CODE >19607:/tmp/xcqurKBN8.s
-10F12 cinit CODE >19609:/tmp/xcqurKBN8.s
-10F12 cinit CODE >19612:/tmp/xcqurKBN8.s
-10F12 cinit CODE >19773:/tmp/xcqurKBN8.s
-10F14 cinit CODE >19774:/tmp/xcqurKBN8.s
-10F16 cinit CODE >19775:/tmp/xcqurKBN8.s
-10F18 cinit CODE >19776:/tmp/xcqurKBN8.s
-10F1A cinit CODE >19777:/tmp/xcqurKBN8.s
-10F1C cinit CODE >19778:/tmp/xcqurKBN8.s
-10F1E cinit CODE >19779:/tmp/xcqurKBN8.s
-10F22 cinit CODE >19780:/tmp/xcqurKBN8.s
-10F26 cinit CODE >19781:/tmp/xcqurKBN8.s
-10F26 cinit CODE >19782:/tmp/xcqurKBN8.s
-10F28 cinit CODE >19783:/tmp/xcqurKBN8.s
-10F2C cinit CODE >19784:/tmp/xcqurKBN8.s
-10F2E cinit CODE >19785:/tmp/xcqurKBN8.s
-10F30 cinit CODE >19786:/tmp/xcqurKBN8.s
-10F32 cinit CODE >19790:/tmp/xcqurKBN8.s
-10F34 cinit CODE >19791:/tmp/xcqurKBN8.s
-10F36 cinit CODE >19792:/tmp/xcqurKBN8.s
-10F38 cinit CODE >19793:/tmp/xcqurKBN8.s
-10F3A cinit CODE >19794:/tmp/xcqurKBN8.s
-10F3C cinit CODE >19795:/tmp/xcqurKBN8.s
-10F3E cinit CODE >19796:/tmp/xcqurKBN8.s
-10F40 cinit CODE >19797:/tmp/xcqurKBN8.s
-10F46 cinit CODE >19801:/tmp/xcqurKBN8.s
-10F4A cinit CODE >19802:/tmp/xcqurKBN8.s
-10F4E cinit CODE >19803:/tmp/xcqurKBN8.s
-10F4E cinit CODE >19804:/tmp/xcqurKBN8.s
-10F50 cinit CODE >19805:/tmp/xcqurKBN8.s
-10F52 cinit CODE >19806:/tmp/xcqurKBN8.s
-10F54 cinit CODE >19807:/tmp/xcqurKBN8.s
-10F56 cinit CODE >19808:/tmp/xcqurKBN8.s
-10F58 cinit CODE >19809:/tmp/xcqurKBN8.s
-10F5A cinit CODE >19812:/tmp/xcqurKBN8.s
-10F5E cinit CODE >19813:/tmp/xcqurKBN8.s
-10F60 cinit CODE >19814:/tmp/xcqurKBN8.s
-10F60 cinit CODE >19815:/tmp/xcqurKBN8.s
-10F62 cinit CODE >19816:/tmp/xcqurKBN8.s
-10F64 cinit CODE >19817:/tmp/xcqurKBN8.s
-10F66 cinit CODE >19820:/tmp/xcqurKBN8.s
-10F6A cinit CODE >19821:/tmp/xcqurKBN8.s
-10F6C cinit CODE >19822:/tmp/xcqurKBN8.s
-10F6C cinit CODE >19823:/tmp/xcqurKBN8.s
-10F6E cinit CODE >19824:/tmp/xcqurKBN8.s
-10F70 cinit CODE >19825:/tmp/xcqurKBN8.s
-10F72 cinit CODE >19833:/tmp/xcqurKBN8.s
-10F74 cinit CODE >19834:/tmp/xcqurKBN8.s
-10F76 cinit CODE >19835:/tmp/xcqurKBN8.s
-10F78 cinit CODE >19836:/tmp/xcqurKBN8.s
-10F7A cinit CODE >19837:/tmp/xcqurKBN8.s
-10F7C cinit CODE >19838:/tmp/xcqurKBN8.s
-10F7E cinit CODE >19839:/tmp/xcqurKBN8.s
-10F80 cinit CODE >19845:/tmp/xcqurKBN8.s
-10F80 cinit CODE >19847:/tmp/xcqurKBN8.s
-10F82 cinit CODE >19848:/tmp/xcqurKBN8.s
+10000 text28 CODE >118:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10000 text28 CODE >120:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10012 text28 CODE >121:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1001E text28 CODE >122:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10034 text28 CODE >123:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10038 text28 CODE >150:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10068 text28 CODE >151:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+100A8 text28 CODE >152:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+100E8 text28 CODE >153:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10128 text28 CODE >154:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10168 text28 CODE >155:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+101A8 text28 CODE >156:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+101E8 text28 CODE >157:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10228 text28 CODE >159:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+103B0 text28 CODE >162:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+103E0 text28 CODE >163:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+103FE text28 CODE >165:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1042E text28 CODE >166:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1044C text28 CODE >168:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10450 text28 CODE >169:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1046E text28 CODE >170:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10472 text28 CODE >171:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10490 text28 CODE >173:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+104BA text28 CODE >174:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+104CA text28 CODE >175:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+104CA text28 CODE >176:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+104E6 text28 CODE >178:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+104F2 text28 CODE >180:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+104FC text28 CODE >182:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1051C text28 CODE >183:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1052C text28 CODE >184:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1053E text28 CODE >185:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10540 text28 CODE >186:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10556 text28 CODE >188:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1055C text28 CODE >190:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10564 text28 CODE >192:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1057C text28 CODE >193:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10592 text28 CODE >195:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10598 text28 CODE >200:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+105A8 text28 CODE >201:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+105AE text28 CODE >202:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+105D2 text28 CODE >203:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10606 text28 CODE >204:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1061E text28 CODE >205:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10622 text28 CODE >206:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10628 text28 CODE >207:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10630 text28 CODE >208:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10634 text28 CODE >209:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10638 text28 CODE >212:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10646 text28 CODE >216:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+111DA text27 CODE >189:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+111DA text27 CODE >192:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11012 text26 CODE >176:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11012 text26 CODE >179:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11028 text26 CODE >181:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11042 text26 CODE >183:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11072 text25 CODE >127:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11072 text25 CODE >129:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11082 text25 CODE >132:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11084 text25 CODE >135:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11088 text25 CODE >136:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+1108E text25 CODE >139:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11090 text25 CODE >140:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11094 text25 CODE >144:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11098 text25 CODE >145:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+1109E text25 CODE >147:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11128 text24 CODE >164:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11128 text24 CODE >168:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+1112A text24 CODE >169:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+1113A text24 CODE >173:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+1113E text24 CODE >174:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+10F74 text23 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
+10F8C text23 CODE >61:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
+10FA8 text23 CODE >63:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
+10FAC text23 CODE >69:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
+10F18 text22 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F18 text22 CODE >66:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F1E text22 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F22 text22 CODE >70:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F26 text22 CODE >72:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F2A text22 CODE >74:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F2E text22 CODE >76:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F32 text22 CODE >78:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F36 text22 CODE >80:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F3A text22 CODE >82:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F3E text22 CODE >84:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F42 text22 CODE >86:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F46 text22 CODE >88:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F4A text22 CODE >90:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F4E text22 CODE >92:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F52 text22 CODE >94:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F56 text22 CODE >96:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F5A text22 CODE >98:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F5E text22 CODE >100:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F62 text22 CODE >102:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F66 text22 CODE >104:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F6A text22 CODE >106:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F6E text22 CODE >108:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10F72 text22 CODE >111:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+11194 text21 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
+11194 text21 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
+1119A text21 CODE >65:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
+1119E text21 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
+111A2 text21 CODE >71:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
+111A6 text21 CODE >73:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp1.c
+11180 text20 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
+11180 text20 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
+11186 text20 CODE >65:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
+1118A text20 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
+1118E text20 CODE >71:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
+11192 text20 CODE >73:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/cmp2.c
+111B8 text19 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/dac1.c
+111B8 text19 CODE >61:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/dac1.c
+111BE text19 CODE >63:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/dac1.c
+111C2 text19 CODE >64:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/dac1.c
+111CE text18 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/fvr.c
+111CE text18 CODE >61:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/fvr.c
+111D4 text18 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/fvr.c
+111D6 text17 CODE >52:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
+111D6 text17 CODE >55:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
+111D8 text17 CODE >56:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/interrupt_manager.c
+110A0 text16 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
+110A0 text16 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
+110A6 text16 CODE >64:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
+110AA text16 CODE >66:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
+110AE text16 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
+110B2 text16 CODE >70:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
+110B6 text16 CODE >72:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
+110BA text16 CODE >74:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
+110BE text16 CODE >76:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
+110C2 text16 CODE >79:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
+110C4 text16 CODE >81:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/nco1.c
+1110C text15 CODE >65:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+1110C text15 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11112 text15 CODE >70:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11116 text15 CODE >72:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+1111A text15 CODE >74:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+1111E text15 CODE >76:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11122 text15 CODE >78:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11126 text15 CODE >79:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+10EAC text14 CODE >55:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EAC text14 CODE >60:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EB0 text14 CODE >61:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EB4 text14 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EB8 text14 CODE >67:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EBC text14 CODE >68:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EC0 text14 CODE >69:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EC4 text14 CODE >74:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EC8 text14 CODE >75:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10ECA text14 CODE >76:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10ECC text14 CODE >81:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10ED0 text14 CODE >82:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10ED4 text14 CODE >83:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10ED8 text14 CODE >84:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EDC text14 CODE >89:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EE2 text14 CODE >90:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EE6 text14 CODE >91:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EEA text14 CODE >92:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EEE text14 CODE >97:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EF4 text14 CODE >98:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EF8 text14 CODE >99:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10EFC text14 CODE >100:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10F00 text14 CODE >105:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10F02 text14 CODE >106:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10F04 text14 CODE >107:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10F06 text14 CODE >112:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10F08 text14 CODE >113:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10F0A text14 CODE >114:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10F0C text14 CODE >115:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10F10 text14 CODE >124:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+10F16 text14 CODE >125:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/pin_manager.c
+110C6 text13 CODE >81:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+110C6 text13 CODE >84:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+110CC text13 CODE >86:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+110D0 text13 CODE >88:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+110D4 text13 CODE >90:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+110D8 text13 CODE >92:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+110DC text13 CODE >94:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+110E0 text13 CODE >96:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+110E4 text13 CODE >98:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+110E8 text13 CODE >99:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+1116C text12 CODE >185:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+1116C text12 CODE >186:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+1117E text12 CODE >187:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+10FC6 text11 CODE >64:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+10FC6 text11 CODE >69:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+10FCC text11 CODE >72:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+10FD0 text11 CODE >75:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+10FD4 text11 CODE >78:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+10FD8 text11 CODE >81:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+10FDC text11 CODE >84:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+10FDE text11 CODE >87:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+10FF8 text11 CODE >90:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+10FFA text11 CODE >93:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+1100A text11 CODE >96:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11010 text11 CODE >97:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/tmr1.c
+11044 text10 CODE >50:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11044 text10 CODE >52:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11048 text10 CODE >53:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+1104C text10 CODE >54:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11050 text10 CODE >55:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11054 text10 CODE >56:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11058 text10 CODE >57:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+1105C text10 CODE >58:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11060 text10 CODE >59:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11064 text10 CODE >60:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11068 text10 CODE >61:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+1106C text10 CODE >62:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11070 text10 CODE >63:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/mcc.c
+11156 text9 CODE >131:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+11156 text9 CODE >134:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+1116A text9 CODE >135:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+11140 text8 CODE >125:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+11140 text8 CODE >128:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+11154 text8 CODE >129:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+111A8 text7 CODE >113:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+111AA text7 CODE >116:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+111B0 text7 CODE >119:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+111B4 text7 CODE >122:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+111B6 text7 CODE >123:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/mcc_generated_files/adcc.c
+10BB6 text6 CODE >7:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10BB6 text6 CODE >12:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10BBA text6 CODE >13:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10BCA text6 CODE >14:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10BD2 text6 CODE >15:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10BD6 text6 CODE >17:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10BE4 text6 CODE >18:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10BEC text6 CODE >19:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10BFE text6 CODE >20:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C02 text6 CODE >21:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C06 text6 CODE >22:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C0C text6 CODE >23:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C0E text6 CODE >21:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C1C text6 CODE >26:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C32 text6 CODE >27:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C3A text6 CODE >28:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C40 text6 CODE >29:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C46 text6 CODE >31:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C56 text6 CODE >32:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C5E text6 CODE >33:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10C6A text6 CODE >34:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/awmod.c
+10D1A text5 CODE >7:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D1A text5 CODE >13:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D2A text5 CODE >14:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D40 text5 CODE >15:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D44 text5 CODE >16:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D48 text5 CODE >17:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D52 text5 CODE >18:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D54 text5 CODE >16:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D62 text5 CODE >21:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D6C text5 CODE >22:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D8A text5 CODE >23:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D9A text5 CODE >24:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10D9C text5 CODE >26:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10DA6 text5 CODE >27:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10DAC text5 CODE >28:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10DAC text5 CODE >29:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10DC4 text5 CODE >30:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/__lldiv.c
+10E3A text4 CODE >15:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+10E3A text4 CODE >119:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+10E4A text4 CODE >121:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+10E58 text4 CODE >122:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+10E68 text4 CODE >123:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+10E72 text4 CODE >124:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+10E7C text4 CODE >125:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+10E92 text4 CODE >128:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+10EAA text4 CODE >129:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul32.c
+10C6C text3 CODE >91:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+10C6C text3 CODE >333:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+10C78 text3 CODE >335:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+10C86 text3 CODE >336:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+10CA6 text3 CODE >337:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+10CB8 text3 CODE >338:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+10CCA text3 CODE >339:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+10CE8 text3 CODE >353:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+10D18 text3 CODE >354:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/Umul64.c
+10AA4 text2 CODE >15:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/rand.c
+10AA4 text2 CODE >20:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/rand.c
+10B5A text2 CODE >22:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/rand.c
+10BB4 text2 CODE >23:/Applications/microchip/xc8/v2.10/pic/sources/c99/common/rand.c
+10648 text1 CODE >227:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10648 text1 CODE >229:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10664 text1 CODE >230:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1069A text1 CODE >231:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1069E text1 CODE >232:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+106A2 text1 CODE >233:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+106A6 text1 CODE >234:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+106AA text1 CODE >235:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+106B6 text1 CODE >237:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+106C6 text1 CODE >265:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+106DA text1 CODE >266:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+106FA text1 CODE >267:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1075C text1 CODE >268:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+107BE text1 CODE >269:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10820 text1 CODE >270:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10882 text1 CODE >272:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+1089C text1 CODE >273:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+108A2 text1 CODE >274:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+108AC text1 CODE >275:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+108B2 text1 CODE >278:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+108B8 text1 CODE >280:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+108CA text1 CODE >287:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+108EC text1 CODE >288:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+108F0 text1 CODE >290:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+108FC text1 CODE >292:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10908 text1 CODE >293:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10910 text1 CODE >294:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10970 text1 CODE >296:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+109D2 text1 CODE >298:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10A38 text1 CODE >299:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10A58 text1 CODE >329:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10A9C text1 CODE >331:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10AA2 text1 CODE >333:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+110EA text0 CODE >335:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+110EA text0 CODE >338:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+110EE text0 CODE >339:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+110FE text0 CODE >344:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+11100 text0 CODE >348:/Users/emmettpalaima/MPLABXProjects/Shephard_PIC18.X/main.c
+10DC6 cinit CODE >26770:/tmp/xc6hkioIf.s
+10DC6 cinit CODE >26772:/tmp/xc6hkioIf.s
+10DC6 cinit CODE >26775:/tmp/xc6hkioIf.s
+10DC6 cinit CODE >26953:/tmp/xc6hkioIf.s
+10DC8 cinit CODE >26954:/tmp/xc6hkioIf.s
+10DCA cinit CODE >26955:/tmp/xc6hkioIf.s
+10DCC cinit CODE >26956:/tmp/xc6hkioIf.s
+10DCE cinit CODE >26957:/tmp/xc6hkioIf.s
+10DD0 cinit CODE >26958:/tmp/xc6hkioIf.s
+10DD2 cinit CODE >26959:/tmp/xc6hkioIf.s
+10DD6 cinit CODE >26960:/tmp/xc6hkioIf.s
+10DDA cinit CODE >26961:/tmp/xc6hkioIf.s
+10DDA cinit CODE >26962:/tmp/xc6hkioIf.s
+10DDC cinit CODE >26963:/tmp/xc6hkioIf.s
+10DE0 cinit CODE >26964:/tmp/xc6hkioIf.s
+10DE2 cinit CODE >26965:/tmp/xc6hkioIf.s
+10DE4 cinit CODE >26966:/tmp/xc6hkioIf.s
+10DE6 cinit CODE >26970:/tmp/xc6hkioIf.s
+10DE8 cinit CODE >26971:/tmp/xc6hkioIf.s
+10DEA cinit CODE >26972:/tmp/xc6hkioIf.s
+10DEC cinit CODE >26973:/tmp/xc6hkioIf.s
+10DEE cinit CODE >26974:/tmp/xc6hkioIf.s
+10DF0 cinit CODE >26975:/tmp/xc6hkioIf.s
+10DF2 cinit CODE >26976:/tmp/xc6hkioIf.s
+10DF4 cinit CODE >26977:/tmp/xc6hkioIf.s
+10DFA cinit CODE >26981:/tmp/xc6hkioIf.s
+10DFE cinit CODE >26982:/tmp/xc6hkioIf.s
+10E02 cinit CODE >26983:/tmp/xc6hkioIf.s
+10E02 cinit CODE >26984:/tmp/xc6hkioIf.s
+10E04 cinit CODE >26985:/tmp/xc6hkioIf.s
+10E06 cinit CODE >26986:/tmp/xc6hkioIf.s
+10E08 cinit CODE >26987:/tmp/xc6hkioIf.s
+10E0A cinit CODE >26988:/tmp/xc6hkioIf.s
+10E0C cinit CODE >26989:/tmp/xc6hkioIf.s
+10E0E cinit CODE >26992:/tmp/xc6hkioIf.s
+10E12 cinit CODE >26993:/tmp/xc6hkioIf.s
+10E14 cinit CODE >26994:/tmp/xc6hkioIf.s
+10E14 cinit CODE >26995:/tmp/xc6hkioIf.s
+10E16 cinit CODE >26996:/tmp/xc6hkioIf.s
+10E18 cinit CODE >26997:/tmp/xc6hkioIf.s
+10E1A cinit CODE >27000:/tmp/xc6hkioIf.s
+10E1E cinit CODE >27001:/tmp/xc6hkioIf.s
+10E20 cinit CODE >27002:/tmp/xc6hkioIf.s
+10E20 cinit CODE >27003:/tmp/xc6hkioIf.s
+10E22 cinit CODE >27004:/tmp/xc6hkioIf.s
+10E24 cinit CODE >27005:/tmp/xc6hkioIf.s
+10E26 cinit CODE >27013:/tmp/xc6hkioIf.s
+10E28 cinit CODE >27014:/tmp/xc6hkioIf.s
+10E2A cinit CODE >27015:/tmp/xc6hkioIf.s
+10E2C cinit CODE >27016:/tmp/xc6hkioIf.s
+10E2E cinit CODE >27017:/tmp/xc6hkioIf.s
+10E30 cinit CODE >27018:/tmp/xc6hkioIf.s
+10E32 cinit CODE >27019:/tmp/xc6hkioIf.s
+10E34 cinit CODE >27025:/tmp/xc6hkioIf.s
+10E34 cinit CODE >27027:/tmp/xc6hkioIf.s
+10E36 cinit CODE >27028:/tmp/xc6hkioIf.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -520,18 +510,18 @@ $dist/default/debug/Shephard_PIC18.X.debug.o
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 __LdataBANK5 0 0 ABS 0 dataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-__Lmediumconst F7DE 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
+__Lmediumconst BFDE 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
 __Hspace_0 30000A 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__Hspace_1 C3B 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
+__Hspace_1 C36 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Hspace_2 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __HidataBANK5 0 0 ABS 0 idataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 _CM1CON0 70 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _CM1CON1 71 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _CM2CON0 74 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _CM2CON1 75 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_readPot 10BEA 0 CODE 0 text1 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_readPot 10AA4 0 CODE 0 text1 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/debug/Shephard_PIC18.X.debug.o
-__mediumconst F7DE 0 MEDIUMCONST 0 mediumconst /tmp/xcxU4pMa9.o
+__mediumconst BFDE 0 MEDIUMCONST 0 mediumconst /tmp/xcYh7xgka.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug/Shephard_PIC18.X.debug.o
 _NCO1ACCH 441 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _NCO1ACCL 440 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
@@ -539,18 +529,18 @@ _NCO1ACCU 442 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _NCO1INCH 444 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _NCO1INCL 443 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _NCO1INCU 445 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_INTERRUPT_Initialize 11338 0 CODE 0 text17 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_INTERRUPT_Initialize 111DA 0 CODE 0 text17 dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_NCO1_Initialize 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _T1CONbits 31E 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_PMD_Initialize 1123A 0 CODE 0 text13 dist/default/debug/Shephard_PIC18.X.debug.o
+_PMD_Initialize 110C6 0 CODE 0 text13 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_RSTOSC$HFINTOSC_64MHZ 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_clockVal 588 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_clockVal 59C 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_WDTCCS$SC 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug/Shephard_PIC18.X.debug.o
 _LATA 4BE 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _LATB 4BF 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _LATC 4C0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_LEDs 580 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_LEDs 590 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 _PMD0 60 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _PMD1 61 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _PMD3 63 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
@@ -563,56 +553,57 @@ _WPUA 401 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _WPUB 409 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _WPUC 411 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _WPUE 421 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-___sp 0 0 STACK 2 stack /tmp/xcxU4pMa9.o
-_freq 59C 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+___sp 0 0 STACK 2 stack /tmp/xcYh7xgka.o
+_freq 5B0 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 _incr 560 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_last 537 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-_main 11216 0 CODE 0 text0 dist/default/debug/Shephard_PIC18.X.debug.o
-_rand 10BEA 0 CODE 0 text2 dist/default/debug/Shephard_PIC18.X.debug.o
-_seed 5A9 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_stop 546 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-_temp 58C 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_test 54D 0 COMRAM 1 dataCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_last 5BA 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_main 110EA 0 CODE 0 text0 dist/default/debug/Shephard_PIC18.X.debug.o
+_rand 10AA4 0 CODE 0 text2 dist/default/debug/Shephard_PIC18.X.debug.o
+_seed 5C5 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_stop 53C 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_temp 5A0 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_test 548 0 COMRAM 1 dataCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/debug/Shephard_PIC18.X.debug.o
-start 1A 0 CODE 0 init /tmp/xcxU4pMa9.o
+start 1A 0 CODE 0 init /tmp/xcYh7xgka.o
 __size_of___awmod 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_main 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_rand 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of___lldiv 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-?___lmul 5B3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-?___omul 5B3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_lastTemp 5A0 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+?___lmul 517 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+?___omul 517 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_lastTemp 5B4 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 _DAC1DATL 7D 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __LidataBANK5 0 0 ABS 0 idataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_TMR1_WriteTimer 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-___awmod@sign 5DA 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-ADCC_StartConversion@channel 5B3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+___awmod@sign 532 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+ADCC_StartConversion@channel 517 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/debug/Shephard_PIC18.X.debug.o
-readPot@i 5E5 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-__accesstop 560 0 ABS 0 - /tmp/xcxU4pMa9.o
-intlevel0 0 0 CODE 0 text /tmp/xcxU4pMa9.o
-intlevel1 0 0 CODE 0 text /tmp/xcxU4pMa9.o
-intlevel2 0 0 CODE 0 text /tmp/xcxU4pMa9.o
-intlevel3 0 0 CODE 0 text /tmp/xcxU4pMa9.o
+readPot@i 5E3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+__accesstop 560 0 ABS 0 - /tmp/xcYh7xgka.o
+intlevel0 0 0 CODE 0 text /tmp/xcYh7xgka.o
+intlevel1 0 0 CODE 0 text /tmp/xcYh7xgka.o
+intlevel2 0 0 CODE 0 text /tmp/xcYh7xgka.o
+intlevel3 0 0 CODE 0 text /tmp/xcYh7xgka.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-_ADCC_StartConversion 11304 0 CODE 0 text7 dist/default/debug/Shephard_PIC18.X.debug.o
+_ADCC_StartConversion 111A8 0 CODE 0 text7 dist/default/debug/Shephard_PIC18.X.debug.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_PMD_Initialize 1125E 0 CODE 0 text13 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_PMD_Initialize 110EA 0 CODE 0 text13 dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_TMR1_DefaultInterruptHandler 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_DAC1_Initialize 11322 0 CODE 0 text19 dist/default/debug/Shephard_PIC18.X.debug.o
-__pidataCOMRAM 1133A 0 CODE 0 idataCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_ADCC_IsConversionDone 112C8 0 CODE 0 text8 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_DAC1_Initialize 111C4 0 CODE 0 text19 dist/default/debug/Shephard_PIC18.X.debug.o
+__pidataCOMRAM 111DC 0 CODE 0 idataCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_decayCounter 598 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_ADCC_IsConversionDone 11156 0 CODE 0 text8 dist/default/debug/Shephard_PIC18.X.debug.o
 ivt0x8_base 8 0 CODE 0 ivt0x8 dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_TMR1_DefaultInterruptHandler 1133A 0 CODE 0 text27 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_TMR1_DefaultInterruptHandler 111DC 0 CODE 0 text27 dist/default/debug/Shephard_PIC18.X.debug.o
 _ACTCON AC 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ADACCH 3E4 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ADACCL 3E3 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
@@ -637,34 +628,34 @@ _ADUTHL 3DB 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ANSELA 400 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ANSELB 408 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ANSELC 410 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_shiftCount 545 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-_FVR_Initialize 1132C 0 CODE 0 text18 dist/default/debug/Shephard_PIC18.X.debug.o
-___inthi_sp 0 0 STACK 2 stack /tmp/xcxU4pMa9.o
-___intlo_sp 0 0 STACK 2 stack /tmp/xcxU4pMa9.o
+_shiftCount 53B 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_FVR_Initialize 111CE 0 CODE 0 text18 dist/default/debug/Shephard_PIC18.X.debug.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcYh7xgka.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcYh7xgka.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_BORV$VBOR_1P9 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _FVRCONbits 3D7 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_INTERRUPT_InterruptManager 11114 0 CODE 0 text23 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_INTERRUPT_InterruptManager 10FC6 0 CODE 0 text23 dist/default/debug/Shephard_PIC18.X.debug.o
 _CM1NCH 72 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _CM1PCH 73 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _CM2NCH 76 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _CM2PCH 77 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_TMR1_SetInterruptHandler 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _DAC1CON 7F 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of___lmul 10FFA 0 CODE 0 text4 dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of___omul 10E64 0 CODE 0 text3 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of___lmul 10EAC 0 CODE 0 text4 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of___omul 10D1A 0 CODE 0 text3 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug/Shephard_PIC18.X.debug.o
-_ADCC_IsConversionDone 112B2 0 CODE 0 text8 dist/default/debug/Shephard_PIC18.X.debug.o
+_ADCC_IsConversionDone 11140 0 CODE 0 text8 dist/default/debug/Shephard_PIC18.X.debug.o
 _CM1CON0bits 70 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Hmediumconst 10000 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
 _FVRCON 3D7 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _NCO1CLK 447 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _NCO1CON 446 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __LnvBANK5 0 0 ABS 0 nvBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_whichDel 549 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of___awmod 10DB4 0 CODE 0 text6 dist/default/debug/Shephard_PIC18.X.debug.o
+_whichDel 544 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of___awmod 10C6C 0 CODE 0 text6 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of___lldiv 10F12 0 CODE 0 text5 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of___lldiv 10DC6 0 CODE 0 text5 dist/default/debug/Shephard_PIC18.X.debug.o
 _doAudio 10000 0 CODE 0 text28 dist/default/debug/Shephard_PIC18.X.debug.o
 _NCO1CONbits 446 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __end_of_cosTab FFDF 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
@@ -673,14 +664,14 @@ _INLVLB 40C 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _INLVLC 414 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _INLVLE 424 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_SAFEN$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_DAC1_Initialize 11316 0 CODE 0 text19 dist/default/debug/Shephard_PIC18.X.debug.o
+_DAC1_Initialize 111B8 0 CODE 0 text19 dist/default/debug/Shephard_PIC18.X.debug.o
 __LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 _INTCON0bits 4D6 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-___lldiv@counter 5BF 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_PIN_MANAGER_Initialize 10FFA 0 CODE 0 text14 dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_FVR_Initialize 11334 0 CODE 0 text18 dist/default/debug/Shephard_PIC18.X.debug.o
-start_initialization 10F12 0 CODE 0 cinit dist/default/debug/Shephard_PIC18.X.debug.o
+___lldiv@counter 523 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_PIN_MANAGER_Initialize 10EAC 0 CODE 0 text14 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_FVR_Initialize 111D6 0 CODE 0 text18 dist/default/debug/Shephard_PIC18.X.debug.o
+start_initialization 10DC6 0 CODE 0 cinit dist/default/debug/Shephard_PIC18.X.debug.o
 _ODCONA 402 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ODCONB 40A 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ODCONC 412 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
@@ -688,7 +679,7 @@ _ODCONE 422 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _OSCFRQ B1 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_WDTCPS$WDTCPS_31 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-___lldiv@dividend 5B3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+___lldiv@dividend 517 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 _ADFLTRH 3E2 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ADFLTRL 3E1 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ADPREVH 3E9 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
@@ -696,7 +687,7 @@ _ADPREVL 3E8 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 ___rparam_used 1 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ADSTPTH 3E0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ADSTPTL 3DF 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_CMP1_Initialize 11304 0 CODE 0 text21 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_CMP1_Initialize 111A8 0 CODE 0 text21 dist/default/debug/Shephard_PIC18.X.debug.o
 _RA4PPS 205 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _RB1I2C 289 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _RB2I2C 288 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
@@ -704,13 +695,13 @@ _RC3I2C 287 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _RC4I2C 286 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __end_of_maskC1 FFE8 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
 __end_of_maskC2 FFFF 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_SYSTEM_Initialize 111C2 0 CODE 0 text10 dist/default/debug/Shephard_PIC18.X.debug.o
-__pcstackBANK5 5B3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_SYSTEM_Initialize 11072 0 CODE 0 text10 dist/default/debug/Shephard_PIC18.X.debug.o
+__pcstackBANK5 5CD 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 _T1GATE 320 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _T1GCON 31F 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_readPot 10636 0 CODE 0 text1 dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_TMR1_SetInterruptHandler 112DC 0 CODE 0 text12 dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_ADCC_Initialize 110C2 0 CODE 0 text22 dist/default/debug/Shephard_PIC18.X.debug.o
+_readPot 10648 0 CODE 0 text1 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_TMR1_SetInterruptHandler 11180 0 CODE 0 text12 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_ADCC_Initialize 10F74 0 CODE 0 text22 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hbank5 0 0 ABS 0 bank5 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hbank6 0 0 ABS 0 bank6 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hbank7 0 0 ABS 0 bank7 dist/default/debug/Shephard_PIC18.X.debug.o
@@ -764,11 +755,11 @@ __Hbank35 0 0 ABS 0 bank35 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hbank36 0 0 ABS 0 bank36 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug/Shephard_PIC18.X.debug.o
 __Hbigram 0 0 ABS 0 bigram dist/default/debug/Shephard_PIC18.X.debug.o
-__smallconst 0 0 SMALLCONST 0 smallconst /tmp/xcxU4pMa9.o
-_counterSave 5F1 0 BANK5 1 dataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+__smallconst 0 0 SMALLCONST 0 smallconst /tmp/xcYh7xgka.o
+_counterSave 5EF 0 BANK5 1 dataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hcomram 0 0 ABS 0 comram dist/default/debug/Shephard_PIC18.X.debug.o
 __Hconfig 30000A 0 CONFIG 0 config dist/default/debug/Shephard_PIC18.X.debug.o
-___omul@product 5C3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+___omul@product 527 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __Lbank5 0 0 ABS 0 bank5 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lbank6 0 0 ABS 0 bank6 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lbank7 0 0 ABS 0 bank7 dist/default/debug/Shephard_PIC18.X.debug.o
@@ -795,8 +786,8 @@ __Ltext7 0 0 ABS 0 text7 dist/default/debug/Shephard_PIC18.X.debug.o
 __Ltext8 0 0 ABS 0 text8 dist/default/debug/Shephard_PIC18.X.debug.o
 __Ltext9 0 0 ABS 0 text9 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/debug/Shephard_PIC18.X.debug.o
-_CMP1_Initialize 112F0 0 CODE 0 text21 dist/default/debug/Shephard_PIC18.X.debug.o
-_INTERRUPT_Initialize 11334 0 CODE 0 text17 dist/default/debug/Shephard_PIC18.X.debug.o
+_CMP1_Initialize 11194 0 CODE 0 text21 dist/default/debug/Shephard_PIC18.X.debug.o
+_INTERRUPT_Initialize 111D6 0 CODE 0 text17 dist/default/debug/Shephard_PIC18.X.debug.o
 __Habs1 0 0 ABS 0 abs1 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hdata 0 0 ABS 0 data dist/default/debug/Shephard_PIC18.X.debug.o
 __Hinit 1E 0 CODE 0 init dist/default/debug/Shephard_PIC18.X.debug.o
@@ -812,53 +803,54 @@ __Lrbss 0 0 COMRAM 1 rbss dist/default/debug/Shephard_PIC18.X.debug.o
 __Ltemp 0 0 COMRAM 1 temp dist/default/debug/Shephard_PIC18.X.debug.o
 __Ltext 0 0 ABS 0 text dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_XINST$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__pnvBANK5 5F5 0 BANK5 1 nvBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-___lmul 10F86 0 CODE 0 text4 dist/default/debug/Shephard_PIC18.X.debug.o
-___omul 10DB4 0 CODE 0 text3 dist/default/debug/Shephard_PIC18.X.debug.o
+__pnvBANK5 5F3 0 BANK5 1 nvBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+___lmul 10E3A 0 CODE 0 text4 dist/default/debug/Shephard_PIC18.X.debug.o
+___omul 10C6C 0 CODE 0 text3 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_WDTCWS$WDTCWS_7 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __LcstackBANK5 0 0 ABS 0 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_ADCC_GetConversionResult 1125E 0 CODE 0 text9 dist/default/debug/Shephard_PIC18.X.debug.o
+_ADCC_GetConversionResult 11156 0 CODE 0 text9 dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_DAC1_Initialize 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Hirdata 0 0 CODE 0 irdata dist/default/debug/Shephard_PIC18.X.debug.o
 __S0 30000A 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__S1 C3B 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
+__S1 C36 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __S2 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_bot 53F 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-_cm1 54A 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-_cm2 5A6 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_ind 527 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-_out 543 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-_top 541 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_alt 53E 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_bot 5BC 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_cm1 545 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_cm2 5C2 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_ind 580 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_out 5BE 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_top 539 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __Hivt0x8 1A 0 CODE 0 ivt0x8 dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_TMR1_ISR 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_IVT1WAY$ON 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 IVTBASEH 45E 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 IVTBASEL 45D 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 IVTBASEU 45F 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__pnvCOMRAM 54B 0 COMRAM 1 nvCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-_botDel 5FB 0 BIGRAM 1 bssBIGRAM dist/default/debug/Shephard_PIC18.X.debug.o
-_expScale 584 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_ADCC_Initialize 11066 0 CODE 0 text22 dist/default/debug/Shephard_PIC18.X.debug.o
-_cosTab F7DF 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
+__pnvCOMRAM 546 0 COMRAM 1 nvCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_botDel 5F6 0 BIGRAM 1 bssBIGRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_expScale 594 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_ADCC_Initialize 10F18 0 CODE 0 text22 dist/default/debug/Shephard_PIC18.X.debug.o
+_cosTab BFDF 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
 __pivt0x8 8 0 CODE 0 ivt0x8 dist/default/debug/Shephard_PIC18.X.debug.o
-_dacOff 5A4 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_dacOff 5C0 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_BBEN$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug/Shephard_PIC18.X.debug.o
-readPot@temp1 5E7 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+readPot@temp1 5E5 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug/Shephard_PIC18.X.debug.o
-_TMR1_CallBack 11162 0 CODE 0 text26 dist/default/debug/Shephard_PIC18.X.debug.o
-_SYSTEM_Initialize 11194 0 CODE 0 text10 dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_CMP2_Initialize 112F0 0 CODE 0 text20 dist/default/debug/Shephard_PIC18.X.debug.o
-___omul@multiplier 5B3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_freqIncr 53D 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_TMR1_CallBack 11012 0 CODE 0 text26 dist/default/debug/Shephard_PIC18.X.debug.o
+_SYSTEM_Initialize 11044 0 CODE 0 text10 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_CMP2_Initialize 11194 0 CODE 0 text20 dist/default/debug/Shephard_PIC18.X.debug.o
+___omul@multiplier 517 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_freqIncr 537 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __HnvBANK5 0 0 ABS 0 nvBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-___lldiv@divisor 5B7 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+___lldiv@divisor 51B 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __Hramtop 2500 0 RAM 0 ramtop dist/default/debug/Shephard_PIC18.X.debug.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/debug/Shephard_PIC18.X.debug.o
-__pdataBANK5 5EB 0 BANK5 1 dataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+__pdataBANK5 5E9 0 BANK5 1 dataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __activetblptr 3 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of___lmul 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
@@ -885,39 +877,39 @@ __Htext27 0 0 ABS 0 text27 dist/default/debug/Shephard_PIC18.X.debug.o
 __Htext28 0 0 ABS 0 text28 dist/default/debug/Shephard_PIC18.X.debug.o
 __Htext29 0 0 ABS 0 text29 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_INTERRUPT_InterruptManager 110C2 0 CODE 0 text23 dist/default/debug/Shephard_PIC18.X.debug.o
-_ledOff 5A5 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-___awmod@counter 5D9 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_INTERRUPT_InterruptManager 10F74 0 CODE 0 text23 dist/default/debug/Shephard_PIC18.X.debug.o
+_ledOff 5C1 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+___awmod@counter 531 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_PMD_Initialize 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _PIE3bits 4A1 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-___omul@multiplicand 5BB 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+___omul@multiplicand 51F 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 _maskC1 FFDF 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
 _maskC2 FFF8 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
-_TMR1_ISR 1129A 0 CODE 0 text24 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext10 11194 0 CODE 0 text10 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext11 11114 0 CODE 0 text11 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext12 112C8 0 CODE 0 text12 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext13 1123A 0 CODE 0 text13 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext14 10FFA 0 CODE 0 text14 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext15 1127E 0 CODE 0 text15 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext16 111F0 0 CODE 0 text16 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext17 11334 0 CODE 0 text17 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext18 1132C 0 CODE 0 text18 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext19 11316 0 CODE 0 text19 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext20 112DC 0 CODE 0 text20 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext21 112F0 0 CODE 0 text21 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext22 11066 0 CODE 0 text22 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext23 110C2 0 CODE 0 text23 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext24 1129A 0 CODE 0 text24 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext25 111C2 0 CODE 0 text25 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext26 11162 0 CODE 0 text26 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext27 11338 0 CODE 0 text27 dist/default/debug/Shephard_PIC18.X.debug.o
+_TMR1_ISR 11128 0 CODE 0 text24 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext10 11044 0 CODE 0 text10 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext11 10FC6 0 CODE 0 text11 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext12 1116C 0 CODE 0 text12 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext13 110C6 0 CODE 0 text13 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext14 10EAC 0 CODE 0 text14 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext15 1110C 0 CODE 0 text15 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext16 110A0 0 CODE 0 text16 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext17 111D6 0 CODE 0 text17 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext18 111CE 0 CODE 0 text18 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext19 111B8 0 CODE 0 text19 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext20 11180 0 CODE 0 text20 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext21 11194 0 CODE 0 text21 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext22 10F18 0 CODE 0 text22 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext23 10F74 0 CODE 0 text23 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext24 11128 0 CODE 0 text24 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext25 11072 0 CODE 0 text25 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext26 11012 0 CODE 0 text26 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext27 111DA 0 CODE 0 text27 dist/default/debug/Shephard_PIC18.X.debug.o
 __ptext28 10000 0 CODE 0 text28 dist/default/debug/Shephard_PIC18.X.debug.o
 __ptext29 0 0 CODE 0 text29 dist/default/debug/Shephard_PIC18.X.debug.o
-_bitMask 5EF 0 BANK5 1 dataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_PIN_MANAGER_Initialize 11066 0 CODE 0 text14 dist/default/debug/Shephard_PIC18.X.debug.o
-___awmod 10CFE 0 CODE 0 text6 dist/default/debug/Shephard_PIC18.X.debug.o
-___lldiv 10E64 0 CODE 0 text5 dist/default/debug/Shephard_PIC18.X.debug.o
+_bitMask 5ED 0 BANK5 1 dataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_PIN_MANAGER_Initialize 10F18 0 CODE 0 text14 dist/default/debug/Shephard_PIC18.X.debug.o
+___awmod 10BB6 0 CODE 0 text6 dist/default/debug/Shephard_PIC18.X.debug.o
+___lldiv 10D1A 0 CODE 0 text5 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lbank10 0 0 ABS 0 bank10 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lbank11 0 0 ABS 0 bank11 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lbank12 0 0 ABS 0 bank12 dist/default/debug/Shephard_PIC18.X.debug.o
@@ -947,30 +939,28 @@ __Lbank35 0 0 ABS 0 bank35 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lbank36 0 0 ABS 0 bank36 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug/Shephard_PIC18.X.debug.o
 __Lbigram 0 0 ABS 0 bigram dist/default/debug/Shephard_PIC18.X.debug.o
-?_ADCC_GetConversionResult 5B3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-___lmul@multiplier 5B3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-?_rand 5CB 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_potVal 594 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+?_ADCC_GetConversionResult 517 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+___lmul@multiplier 517 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+?_rand 52F 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_potVal 5A8 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lcomram 0 0 ABS 0 comram dist/default/debug/Shephard_PIC18.X.debug.o
 __Lconfig 300000 0 CONFIG 0 config dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_BBSIZE$BBSIZE_512 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_TMR1_ISR 112B2 0 CODE 0 text24 dist/default/debug/Shephard_PIC18.X.debug.o
-_LATAbits 4BE 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_LATBbits 4BF 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_TMR1_ISR 11140 0 CODE 0 text24 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_WRTAPP$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_ADCC_IsConversionDone 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_CMP1_Initialize 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_CMP2_Initialize 112DC 0 CODE 0 text20 dist/default/debug/Shephard_PIC18.X.debug.o
+_CMP2_Initialize 11180 0 CODE 0 text20 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/debug/Shephard_PIC18.X.debug.o
-_shift1 5B2 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_shift2 5B1 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_shift1 543 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_shift2 542 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/debug/Shephard_PIC18.X.debug.o
-_topDel 91B 0 BIGRAM 1 bssBIGRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_topDel 916 0 BIGRAM 1 bssBIGRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_ADCC_StartConversion 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-stackhi 24FF 0 ABS 0 - /tmp/xcxU4pMa9.o
-stacklo C3B 0 ABS 0 - /tmp/xcxU4pMa9.o
+stackhi 24FF 0 ABS 0 - /tmp/xcYh7xgka.o
+stacklo C36 0 ABS 0 - /tmp/xcYh7xgka.o
 _OSCCON1 AD 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _OSCCON3 AF 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _OSCTUNE B0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
@@ -981,48 +971,48 @@ _ADCON1bits 3F4 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ADCON2bits 3F5 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ADCON3bits 3F6 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _CM2CON0bits 74 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__pbssBIGRAM 5FB 0 BIGRAM 1 bssBIGRAM dist/default/debug/Shephard_PIC18.X.debug.o
+__pbssBIGRAM 5F6 0 BIGRAM 1 bssBIGRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_ADCC_Initialize 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Lspace_0 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Lspace_1 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Lspace_2 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__pbssCOMRAM 527 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+__pbssCOMRAM 533 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_LPBOREN$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_doAudio 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_botCounter 539 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_botCounter 533 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __HcstackBANK5 0 0 ABS 0 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_ADCC_GetConversionResult 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _PIR3bits 4B1 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_ADCC_StartConversion 11316 0 CODE 0 text7 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_ADCC_StartConversion 111B8 0 CODE 0 text7 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_LVP$ON 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_CSWEN$ON 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_ZCD$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-end_of_initialization 10F80 0 CODE 0 cinit dist/default/debug/Shephard_PIC18.X.debug.o
+end_of_initialization 10E34 0 CODE 0 cinit dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_TMR1_CallBack 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_NCO1_Initialize 11216 0 CODE 0 text16 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_NCO1_Initialize 110C6 0 CODE 0 text16 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 ?___awmod 5D5 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_FVR_Initialize 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-?___lldiv 5B3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+?___lldiv 517 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/debug/Shephard_PIC18.X.debug.o
-TMR1_SetInterruptHandler@InterruptHandler 5B3 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+TMR1_SetInterruptHandler@InterruptHandler 517 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __HbssBANK5 0 0 ABS 0 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 ___awmod@dividend 5D5 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lramtop 2500 0 RAM 0 ramtop dist/default/debug/Shephard_PIC18.X.debug.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/debug/Shephard_PIC18.X.debug.o
-__pcinit 10F12 0 CODE 0 cinit dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext0 11216 0 CODE 0 text0 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext1 10636 0 CODE 0 text1 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext2 10BEA 0 CODE 0 text2 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext3 10DB4 0 CODE 0 text3 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext4 10F86 0 CODE 0 text4 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext5 10E64 0 CODE 0 text5 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext6 10CFE 0 CODE 0 text6 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext7 11304 0 CODE 0 text7 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext8 112B2 0 CODE 0 text8 dist/default/debug/Shephard_PIC18.X.debug.o
-__ptext9 1125E 0 CODE 0 text9 dist/default/debug/Shephard_PIC18.X.debug.o
+__pcinit 10DC6 0 CODE 0 cinit dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext0 110EA 0 CODE 0 text0 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext1 10648 0 CODE 0 text1 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext2 10AA4 0 CODE 0 text2 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext3 10C6C 0 CODE 0 text3 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext4 10E3A 0 CODE 0 text4 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext5 10D1A 0 CODE 0 text5 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext6 10BB6 0 CODE 0 text6 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext7 111A8 0 CODE 0 text7 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext8 11140 0 CODE 0 text8 dist/default/debug/Shephard_PIC18.X.debug.o
+__ptext9 11156 0 CODE 0 text9 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/debug/Shephard_PIC18.X.debug.o
 __Ltext10 0 0 ABS 0 text10 dist/default/debug/Shephard_PIC18.X.debug.o
 __Ltext11 0 0 ABS 0 text11 dist/default/debug/Shephard_PIC18.X.debug.o
@@ -1044,15 +1034,15 @@ __Ltext26 0 0 ABS 0 text26 dist/default/debug/Shephard_PIC18.X.debug.o
 __Ltext27 0 0 ABS 0 text27 dist/default/debug/Shephard_PIC18.X.debug.o
 __Ltext28 0 0 ABS 0 text28 dist/default/debug/Shephard_PIC18.X.debug.o
 __Ltext29 0 0 ABS 0 text29 dist/default/debug/Shephard_PIC18.X.debug.o
-__ramtop 2500 0 RAM 0 ramtop /tmp/xcxU4pMa9.o
+__ramtop 2500 0 RAM 0 ramtop /tmp/xcYh7xgka.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/debug/Shephard_PIC18.X.debug.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug/Shephard_PIC18.X.debug.o
 TMR1_WriteTimer@timerVal 501 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-_delCounter 53B 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_TMR1_Initialize 11162 0 CODE 0 text11 dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_TMR1_WriteTimer 111F0 0 CODE 0 text25 dist/default/debug/Shephard_PIC18.X.debug.o
-_clockCounter 5EB 0 BANK5 1 dataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_TMR1_CallBack 11194 0 CODE 0 text26 dist/default/debug/Shephard_PIC18.X.debug.o
+_delCounter 535 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_TMR1_Initialize 11012 0 CODE 0 text11 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_TMR1_WriteTimer 110A0 0 CODE 0 text25 dist/default/debug/Shephard_PIC18.X.debug.o
+_clockCounter 5E9 0 BANK5 1 dataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_TMR1_CallBack 11044 0 CODE 0 text26 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug/Shephard_PIC18.X.debug.o
 _SLRCONA 403 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _SLRCONB 40B 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
@@ -1061,33 +1051,34 @@ __CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_readPot 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 ___param_bank 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of__initialization 10F80 0 CODE 0 cinit dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of__initialization 10E34 0 CODE 0 cinit dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_CMP2_Initialize 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
+_capture 53D 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 ___awmod@divisor 5D7 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_WRTB$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_WRTC$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_WRTD$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ADSTATbits 3F7 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_NCO1_Initialize 111F0 0 CODE 0 text16 dist/default/debug/Shephard_PIC18.X.debug.o
-__pidataBANK5 11322 0 CODE 0 idataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_NCO1_Initialize 110A0 0 CODE 0 text16 dist/default/debug/Shephard_PIC18.X.debug.o
+__pidataBANK5 111C4 0 CODE 0 idataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_PWRTS$PWRT_OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_timer1ReloadVal 54B 0 COMRAM 1 nvCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-___lmul@product 5BB 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_TMR1_DefaultInterruptHandler 11338 0 CODE 0 text27 dist/default/debug/Shephard_PIC18.X.debug.o
-_lastCompare 547 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-___lmul@multiplicand 5B7 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_potFlag 5A8 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-___lldiv@quotient 5BB 0 BANK5 1 cstackBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_freqCounter 590 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_timer1ReloadVal 546 0 COMRAM 1 nvCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+___lmul@product 51F 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_TMR1_DefaultInterruptHandler 111DA 0 CODE 0 text27 dist/default/debug/Shephard_PIC18.X.debug.o
+_lastCompare 53F 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+___lmul@multiplicand 51B 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_potFlag 5C4 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+___lldiv@quotient 51F 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_freqCounter 5A4 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __pcstackCOMRAM 501 0 COMRAM 1 cstackCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_ADCC_GetConversionResult 1127E 0 CODE 0 text9 dist/default/debug/Shephard_PIC18.X.debug.o
-__pmediumconst F7DE 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_doAudio 10636 0 CODE 0 text28 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_ADCC_GetConversionResult 1116C 0 CODE 0 text9 dist/default/debug/Shephard_PIC18.X.debug.o
+__pmediumconst BFDE 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_doAudio 10648 0 CODE 0 text28 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_main 1123A 0 CODE 0 text0 dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_rand 10CFE 0 CODE 0 text2 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_main 1110C 0 CODE 0 text0 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_rand 10BB6 0 CODE 0 text2 dist/default/debug/Shephard_PIC18.X.debug.o
 _ADACT 3F9 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ADCAP 3F0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 _ADCLK 3FA 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
@@ -1114,33 +1105,33 @@ __LRAM 1 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __Lbss 0 0 RAM 1 bss dist/default/debug/Shephard_PIC18.X.debug.o
 __Lram 0 0 ABS 0 ram dist/default/debug/Shephard_PIC18.X.debug.o
 __Lsfr 0 0 ABS 0 sfr dist/default/debug/Shephard_PIC18.X.debug.o
-_TMR1_Initialize 11114 0 CODE 0 text11 dist/default/debug/Shephard_PIC18.X.debug.o
-_decay 5A2 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_TMR1_WriteTimer 111C2 0 CODE 0 text25 dist/default/debug/Shephard_PIC18.X.debug.o
-_index 598 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_mask1 5F8 0 BANK5 1 nvBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_mask2 5FA 0 BANK5 1 nvBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_TMR1_Initialize 10FC6 0 CODE 0 text11 dist/default/debug/Shephard_PIC18.X.debug.o
+_decay 5B6 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_TMR1_WriteTimer 11072 0 CODE 0 text25 dist/default/debug/Shephard_PIC18.X.debug.o
+_index 5AC 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_mask1 5B8 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_mask2 541 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 _maskA FFF1 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
 _maskB FFE8 0 MEDIUMCONST 0 mediumconst dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __HdataBANK5 0 0 ABS 0 dataBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-__end_of_OSCILLATOR_Initialize 1129A 0 CODE 0 text15 dist/default/debug/Shephard_PIC18.X.debug.o
+__end_of_OSCILLATOR_Initialize 11128 0 CODE 0 text15 dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-__initialization 10F12 0 CODE 0 cinit dist/default/debug/Shephard_PIC18.X.debug.o
+__initialization 10DC6 0 CODE 0 cinit dist/default/debug/Shephard_PIC18.X.debug.o
 __pbssBANK5 560 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-__pdataCOMRAM 54D 0 COMRAM 1 dataCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+__pdataCOMRAM 548 0 COMRAM 1 dataCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_MVECEN$OFF 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_compare 548 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
+_compare 540 0 COMRAM 1 bssCOMRAM dist/default/debug/Shephard_PIC18.X.debug.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/debug/Shephard_PIC18.X.debug.o
 __Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug/Shephard_PIC18.X.debug.o
-_TMR1_SetInterruptHandler 112C8 0 CODE 0 text12 dist/default/debug/Shephard_PIC18.X.debug.o
+_TMR1_SetInterruptHandler 1116C 0 CODE 0 text12 dist/default/debug/Shephard_PIC18.X.debug.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/debug/Shephard_PIC18.X.debug.o
-_potArray 5A7 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_potArray 5C3 0 BANK5 1 bssBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug/Shephard_PIC18.X.debug.o
 __CFG_MCLRE$EXTMCLR 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
 __size_of_INTERRUPT_Initialize 0 0 ABS 0 - dist/default/debug/Shephard_PIC18.X.debug.o
-_TMR1_InterruptHandler 5F5 0 BANK5 1 nvBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
-_OSCILLATOR_Initialize 1127E 0 CODE 0 text15 dist/default/debug/Shephard_PIC18.X.debug.o
+_TMR1_InterruptHandler 5F3 0 BANK5 1 nvBANK5 dist/default/debug/Shephard_PIC18.X.debug.o
+_OSCILLATOR_Initialize 1110C 0 CODE 0 text15 dist/default/debug/Shephard_PIC18.X.debug.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1167,12 +1158,12 @@ _OSCILLATOR_Initialize 1127E 0 CODE 0 text15 dist/default/debug/Shephard_PIC18.X
 %SEGMENTS
 ivt0x8 0 8 8 16 1
 idloc 0 200000 200000 20 1
-text28 0 10000 10000 133B 1
-cstackCOMRAM 1 501 501 4D 1
+text28 0 10000 10000 11DD 1
+cstackCOMRAM 1 501 501 48 1
 reset_vec 0 0 0 4 1
-bssBANK5 1 560 560 9B 1
-bssBIGRAM 1 5FB 5FB 640 1
-mediumconst 0 F7DE F7DE 822 1
+bssBANK5 1 560 560 96 1
+bssBIGRAM 1 5F6 5F6 640 1
+mediumconst 0 BFDE BFDE 4022 1
 config 0 300000 300000 A 1
 # NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
