@@ -49,59 +49,45 @@
                          Main application
  */
 
-//uint32_t incr;
-uint32_t freq;
-uint32_t index;
-uint32_t potVal;
+
 uint16_t ind[8] = {};
-uint16_t out;
-uint16_t top;
-uint16_t bot;
-
-//uint16_t potIncr[4] = {0, 0, 0, 0};
-//uint16_t incr[4] = {0, 0, 0, 0};
-
 uint16_t incr[2][8] = {};
 
+uint16_t out;
+uint16_t top;
+
+uint32_t potVal;
 uint8_t potFlag = 0;
 uint8_t potArray = 0;
 
 uint32_t freqCounter = 0;
-uint32_t temp;
 uint16_t freqIncr;
 
+uint32_t temp;
+uint32_t expScale;
+
 uint32_t clockCounter = 1;
-uint8_t cm1 = 0;
-uint8_t cm2 = 0;
 uint32_t counterSave = 1;
 uint32_t clockVal = 0;
+uint8_t cm1 = 0;
+uint8_t cm2 = 0;
 
 #define DEL_LEN 400
-#define DEL_SHIFT 2
 
 uint16_t topDel[DEL_LEN] = {};
 uint16_t botDel[DEL_LEN] = {};
 uint16_t delCounter = 0;
 uint16_t botCounter = 0;
-uint8_t whichDel = 0;
-
-uint8_t test = 10;
-
-uint16_t last = 0;
 
 uint8_t shift1 = 0;
 uint8_t shift2 = 0;
-
-uint16_t mask1 = 0;
-uint8_t mask2 = 0;
 
 #define INDMOD 8192
 #define INDMASK 8191
 #define INDSHIFT 3
 
-uint16_t decay = 0;
+uint32_t decay = 0;
 uint8_t ledOff = 0;
-uint8_t dacOff = 0;
 
 const uint8_t maskB[9] = {0, 0, 0, 0, 0B1, 0B10, 0B100, 0B1000, 0B10000};
 const uint8_t maskC1[9] = {0B00010000, 0B00100000, 0B01000000, 0B10000000, 0, 0, 0, 0, 0};
@@ -187,6 +173,13 @@ void doAudio(){
     }
     cm1 = capture;
     
+    capture = CM2CON0bits.C2OUT;
+    if(capture && !cm2){
+        decay++;
+    }   
+    cm2 = capture;
+    ledOff |= cm2;
+    
     compare = (freqCounter >> 16) & 0B00000111;
     
     shift1 += (lastCompare < compare);
@@ -194,9 +187,6 @@ void doAudio(){
 
     lastCompare = compare;
         
-//    if(!dacOff){
-//        DAC1DATL = (top >> 8) & 255;
-//    }
     if(!ledOff){
         DAC1DATL = (top >> 8) & 255;
         LATB = maskB[shift1] | (cm1 << 5);
@@ -210,122 +200,42 @@ void doAudio(){
     }
     
     decayCounter++;
+    
 //    LATAbits.LATA1 = alt;
 //    alt = !alt;
     
 }
 
-uint32_t expScale;
-uint16_t bitMask = 1;
-uint16_t lastTemp = 0;
-uint32_t LEDs = 0;
-uint8_t stop = 0;
-
-//uint32_t lastTemp;
-uint8_t shiftCount = 0;
-
 void readPot(){
     
     if(decayCounter > 100){
-        if(decay > (rand() % 10000)){
-            ledOff = 1;
-            dacOff = 1;
-        }else{
-            dacOff = 0;
-            ledOff = 0 + CM2CON0bits.C2OUT;
-        }
+        ledOff = (decay > (rand() % 50000));
         decayCounter = 0;
     }
     
-//    if(!ledOff){
-//        LATB = maskB[shift1];
-//        LATC = maskC1[shift1] | maskC2[shift2];
-//        LATA = maskA[shift2];
-//    }else{
-//        LATB = 0;
-//        LATC = 0;
-//        LATA = 0;
-//    }
-//    LATBbits.LATB5 = CM1CON0bits.C1OUT;
-    
-//    mask1 = (1 << shift1);
-//    mask2 = (1 << shift2);
-//    
-//    if(ledOff){
-//        mask1 = mask2 = 0;
-//    }
-//    
-//    LATB = CM1CON0bits.C1OUT << 5;
-//    LATB |= (mask1 >> 4) & 0B00011111;
-//    LATC = ((mask1 & 0B00001111) << 4) | ((mask2 & 0B01111000) >> 3);
-//    LATAbits.LATA6 = (mask2 == 0B00000100);
-//    LATAbits.LATA7 = (mask2 == 0B00000010);
-//    LATAbits.LATA5 = (mask2 == 0B00000001);
-    
     if(ADCC_IsConversionDone()){   
+        
         uint32_t temp1 = ADCC_GetConversionResult() >> 1;
         temp1 = (temp1 * temp1) >> 11;
         temp1 = (temp1 * temp1) >> 11;
-        temp1 = (temp1 * temp1) >> 11;
-        temp1 = (temp1 * temp1) >> 11;
-//        temp1 = temp1 >> 1;
         potVal = temp1 + 10;
+        
         NCO1INCU = 0;
         NCO1INCH = (potVal >> 8) & 0B00001111;
         NCO1INCL = (potVal) & 0B11111111;
         
-        
         ADCC_StartConversion(channel_ANA0);
     }
+    
     if(!potFlag){
-        
-//        uint32_t rand1 = rand() % 10000;
-//        uint32_t rand2 = rand() % 10000;
-//        if(rand2 > rand1){
-//            rand1 = rand2;
-//        }
-        if(CM2CON0bits.C2OUT && !cm2){
-            decay++;
-        }   
-        cm2 = CM2CON0bits.C2OUT;
         
         temp = freqCounter >> 16;
         for(int i = 0; i < 8; ++i){
             expScale = (temp + 512 * i) % 4096;
-//            expScale = (expScale * expScale * expScale) >> 20;
             expScale = (expScale * expScale) >> 12;
-//            expScale = (expScale * expScale) >> 10;
             incr[!potArray][i] = expScale + 20;
         }
-        
-//        temp = temp % 8;
-//        if(lastTemp < temp){
-//            shift1 = (shift1 + 1) % 9;
-//        }
-//            
-//        lastTemp = temp;
-//        
-//        bitMask = 1 << shiftCount;
-//        
-//        LATB = (bitMask >> 3) & 0B00111111;
-//        LATC = (bitMask & 0B00000111) << 5;
-        
-//        if(!((temp >> 4) % 9)){ if(!stop){bitMask++;} stop = 1;}
-//        else{ stop = 0; }
-//        if(bitMask >= 255){ bitMask = 1; }
-//        LEDs = 0;
-        
-//        LEDs = bitMask << ((temp >> 4) % 9);
-//        LEDs |= (LEDs >> 9);
-        
-//        LATC = 0;
-//        LATC = (LEDs << 4) & 0B11110000;
-//        LATB = (LEDs >> 4) & 0B00011111;
-         
-//        LATC = (1 << ((temp % 128) >> 4)) ;
-//        LATC = 0B11000000;
-//        LATC = 1 << ((potVal % 128) >> 4);
-        
+
         clockVal = (1280000 / counterSave);
         
         potFlag = 1;
