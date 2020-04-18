@@ -7,7 +7,9 @@
 # 1 "/Applications/microchip/xc8/v2.10/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-# 44 "main.c"
+# 45 "main.c"
+# 1 "./mcc_generated_files/mcc.h" 1
+# 49 "./mcc_generated_files/mcc.h"
 # 1 "/Applications/microchip/xc8/v2.10/pic/include/xc.h" 1 3
 # 18 "/Applications/microchip/xc8/v2.10/pic/include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -26976,10 +26978,8 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "/Applications/microchip/xc8/v2.10/pic/include/xc.h" 2 3
-# 44 "main.c" 2
+# 49 "./mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/mcc.h" 1
-# 50 "./mcc_generated_files/mcc.h"
 # 1 "./mcc_generated_files/device_config.h" 1
 # 50 "./mcc_generated_files/mcc.h" 2
 
@@ -27259,6 +27259,8 @@ void PMD_Initialize(void);
 
 # 1 "./CosineTables.h" 1
 # 11 "./CosineTables.h"
+const uint16_t cos2[8192] = {};
+
 const uint16_t cosTab[1024] = {
 4095, 4094, 4094, 4094, 4094, 4094, 4093, 4093, 4092, 4091, 4091, 4090, 4089, 4088, 4087, 4086,
 4085, 4083, 4082, 4081, 4079, 4078, 4076, 4074, 4072, 4070, 4068, 4066, 4064, 4062, 4060, 4058,
@@ -27380,19 +27382,22 @@ uint8_t mask2 = 0;
 
 
 
+
 uint16_t decay = 0;
 uint8_t ledOff = 0;
 uint8_t dacOff = 0;
 
+const uint8_t maskB[9] = {0, 0, 0, 0, 0B1, 0B10, 0B100, 0B1000, 0B10000};
+const uint8_t maskC1[9] = {0B00010000, 0B00100000, 0B01000000, 0B10000000, 0, 0, 0, 0, 0};
+const uint8_t maskC2[7] = {0, 0, 0, 0B1, 0B10, 0B100, 0B1000};
+const uint8_t maskA[7] = {0B00100000, 0B10000000, 0B01000000, 0, 0, 0, 0};
+
+uint8_t compare = 0;
+uint8_t lastCompare = 0;
+
 void doAudio(){
-# 118 "main.c"
-    test = 10;
 
     if(potFlag){
-
-
-
-
         freqIncr = clockVal;
         potArray = !potArray;
         potFlag = 0;
@@ -27421,36 +27426,22 @@ void doAudio(){
 
     ind[7] += incr[potArray][7];
     if(ind[7] > 8192){ ind[7] -= 8192; }
-# 161 "main.c"
-    top = (cosTab[ind[0] >> 3] + cosTab[ind[2] >> 3] + cosTab[ind[4] >> 3] + cosTab[ind[6] >> 3]) >> 1;
 
-    bot = (cosTab[ind[1] >> 3] + cosTab[ind[3] >> 3] + cosTab[ind[5] >> 3] + cosTab[ind[7] >> 3]) >> 1;
 
-    top += bot;
-# 195 "main.c"
+    top = (cosTab[ind[0] >> 3] + cosTab[ind[2] >> 3] + cosTab[ind[4] >> 3] + cosTab[ind[6] >> 3]
+            + cosTab[ind[1] >> 3] + cosTab[ind[3] >> 3] + cosTab[ind[5] >> 3] + cosTab[ind[7] >> 3]) >> 1;
+
     top += (topDel[delCounter]) >> 1;
     topDel[delCounter] = top;
 
     top += (botDel[botCounter]) >> 1;
-
-
     botDel[botCounter] = top;
-
-
-
-
 
     delCounter++;
     if(delCounter >= 400){ delCounter = 0; }
     botCounter++;
     if(botCounter >= 247){ botCounter = 0; }
 
-
-
-    if(!dacOff){
-        DAC1DATL = (top >> 8) & 255;
-    }
-# 237 "main.c"
     if(freqCounter < freqIncr){
         freqCounter += ((uint32_t)4096 << 16);
     }
@@ -27461,18 +27452,17 @@ void doAudio(){
     if(CM1CON0bits.C1OUT && !cm1){
         counterSave = clockCounter;
         clockCounter = 1;
-
-
         shift2++;
         if(shift2 == 7){ shift2 = 0; }
     }
-# 264 "main.c"
+# 185 "main.c"
+    if(!dacOff){
+        DAC1DATL = (top >> 8) & 255;
+    }
+
     cm1 = CM1CON0bits.C1OUT;
 
     LATBbits.LATB5 = CM1CON0bits.C1OUT;
-
-
-
 
 }
 
@@ -27486,8 +27476,7 @@ uint8_t stop = 0;
 uint8_t shiftCount = 0;
 
 void readPot(){
-
-
+# 217 "main.c"
     mask1 = (1 << shift1);
     mask2 = (1 << shift2);
 
@@ -27507,6 +27496,7 @@ void readPot(){
         temp1 = (temp1 * temp1) >> 12;
         temp1 = (temp1 * temp1) >> 12;
         temp1 = (temp1 * temp1) >> 12;
+        temp1 = temp1 >> 1;
         potVal = temp1 + 10;
         NCO1INCU = 0;
         NCO1INCH = (potVal >> 8) & 0B00001111;
@@ -27527,7 +27517,7 @@ void readPot(){
         }
         cm2 = CM2CON0bits.C2OUT;
 
-        if(decay > (rand() % 50000)){
+        if(decay > (rand() % 20000)){
             ledOff = 1;
             dacOff = 1;
         }else{
@@ -27551,7 +27541,7 @@ void readPot(){
         }
 
         lastTemp = temp;
-# 370 "main.c"
+# 303 "main.c"
         clockVal = (1280000 / counterSave);
 
         potFlag = 1;

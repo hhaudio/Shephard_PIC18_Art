@@ -40,6 +40,7 @@
     OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS 
     SOFTWARE.
 */
+#define __OPTIMIZE_SPEED__
 
 #include "mcc_generated_files/mcc.h"
 #include "CosineTables.h"
@@ -95,40 +96,24 @@ uint16_t mask1 = 0;
 uint8_t mask2 = 0;
 
 #define INDMOD 8192
+#define INDMASK 8191
 #define INDSHIFT 3
 
 uint16_t decay = 0;
 uint8_t ledOff = 0;
 uint8_t dacOff = 0;
 
-uint8_t maskB[9] = {0, 0, 0, 0, 0B1, 0B10, 0B100, 0B1000, 0B10000};
-uint8_t maskC1[9] = {0B00010000, 0B00100000, 0B01000000, 0B10000000, 0, 0, 0, 0, 0};
-uint8_t maskC2[7] = {0, 0, 0, 0B1, 0B10, 0B100, 0B1000};
-uint8_t maskA[7] = {0B1, 0B10, 0B100, 0, 0, 0, 0};
+const uint8_t maskB[9] = {0, 0, 0, 0, 0B1, 0B10, 0B100, 0B1000, 0B10000};
+const uint8_t maskC1[9] = {0B00010000, 0B00100000, 0B01000000, 0B10000000, 0, 0, 0, 0, 0};
+const uint8_t maskC2[7] = {0, 0, 0, 0B1, 0B10, 0B100, 0B1000};
+const uint8_t maskA[7] = {0B00100000, 0B10000000, 0B01000000, 0, 0, 0, 0};
 
 uint8_t compare = 0;
 uint8_t lastCompare = 0;
 
 void doAudio(){
-//    index += (potVal % 256) + 1;
-//    if(index >= 2500){ index -= 2500; }
-    
-//    out = 0;
-    
-//    for(int i = 0; i < 2; ++i){
-//        ind[i] += ((potVal + i * 128) % 256);
-//        if(ind[i] >= 4096){ ind[i] -= 4096; }
-//        out += cosTab[ind[i] >> 2];
-////        out += sineL[ind[i] >> 2];
-////        out += sineH[ind[i] >> 2] << 8;
-//    }
-    test = 10;
-    
+
     if(potFlag){
-//        incr[0] = potIncr[0];
-//        incr[1] = potIncr[1];
-//        incr[2] = potIncr[2];
-//        incr[3] = potIncr[3];
         freqIncr = clockVal;
         potArray = !potArray;
         potFlag = 0;
@@ -158,89 +143,21 @@ void doAudio(){
     ind[7] += incr[potArray][7];
     if(ind[7] > INDMOD){ ind[7] -= INDMOD; }
     
-//    out = (cosTab[ind[0] >> 2] + cosTab[ind[1] >> 2] + cosTab[ind[2] >> 2] + cosTab[ind[3] >> 2] +
-//            cosTab[ind[4] >> 2] + cosTab[ind[5] >> 2] + cosTab[ind[6] >> 2] + cosTab[ind[7] >> 2]
-//            ) >> 1;
-    
-//    out = ((uint32_t)cosTab[ind[0] >> 2] + (uint32_t)cosTab[ind[1] >> 2] + (uint32_t)cosTab[ind[2] >> 2] + (uint32_t)cosTab[ind[3] >> 2] +
-//            (uint32_t)cosTab[ind[4] >> 2] + (uint32_t)cosTab[ind[5] >> 2] + (uint32_t)cosTab[ind[6] >> 2] + (uint32_t)cosTab[ind[7] >> 2]
-//            ) >> 5;
-    top = (cosTab[ind[0] >> INDSHIFT] + cosTab[ind[2] >> INDSHIFT] + cosTab[ind[4] >> INDSHIFT] + cosTab[ind[6] >> INDSHIFT]) >> 1;
-    
-    bot = (cosTab[ind[1] >> INDSHIFT] + cosTab[ind[3] >> INDSHIFT] + cosTab[ind[5] >> INDSHIFT] + cosTab[ind[7] >> INDSHIFT]) >> 1;
-    
-    top += bot;
-    
-//    top += last >> 1;
-//    last = top;
-    
-//    if(whichDel){
-//        bot = (topDel[delCounter]);
-//        bot += (topDel[delCounter]);
-//        bot += (topDel[delCounter]);
-//        bot += (topDel[delCounter]);
-        
-//        bot += (topDel[delCounter]);
-//        bot += (topDel[delCounter]);
-//        bot += (topDel[delCounter]);
-//        bot += (topDel[delCounter]);
-//    }else{
-//        bot = (botDel[delCounter]);
-//        bot += (botDel[delCounter]);
-//        bot += (botDel[delCounter]);
-//        bot += (botDel[delCounter]);
-//    }
-    
-//    top += bot >> 2;
-    
-    
-//    top += (botDel[delCounter]) >> 1;
-    
-//    top += (topDel[delCounter] * 3) >> 2;
-//    bot += (botDel[delCounter] * 3) >> 2;
-    
+
+    top = (cosTab[ind[0] >> INDSHIFT] + cosTab[ind[2] >> INDSHIFT] + cosTab[ind[4] >> INDSHIFT] + cosTab[ind[6] >> INDSHIFT]
+            + cosTab[ind[1] >> INDSHIFT] + cosTab[ind[3] >> INDSHIFT] + cosTab[ind[5] >> INDSHIFT] + cosTab[ind[7] >> INDSHIFT]) >> 1;
+     
     top += (topDel[delCounter]) >> 1;
     topDel[delCounter] = top;
     
     top += (botDel[botCounter]) >> 1;
-   
-    
     botDel[botCounter] = top;
     
-    
-//    if(whichDel){ topDel[delCounter] = top; }
-//    else{ botDel[delCounter] = bot; }
-    
     delCounter++;
-    if(delCounter >= DEL_LEN){ delCounter = 0; }//whichDel = !whichDel;}
+    if(delCounter >= DEL_LEN){ delCounter = 0; }
     botCounter++;
     if(botCounter >= 247){ botCounter = 0; }
-    
-//    botDel[delCounter] = bot;
-
-    if(!dacOff){
-        DAC1DATL = (top >> 8) & 255;
-    }
-    
-    
-//    //load data to DAC
-//    DAC1CON0bits.DAC1FM = 1;
-//    
-//    DAC1REFL = out & 0B11000000;
-//    DAC1REFH = (out >> 8) & 0B11111111;
-//
-//    //Loading 10bit data to DAC1
-////    DAC1REFL  = sineL[ind[0] >> 2] & 0B11000000;  
-////    DAC1REFH  = sineH[ind[0] >> 2];
-//    //Loading DAC1 double buffer data to latch.
-//    DACLDbits.DAC1LD = 1;
-//    
-//    LATAbits.LATA4 = !LATAbits.LATA4;
-//    
-//    freqCounter += freqIncr;
-//    if(freqCounter >= ((uint32_t)4096 << 16)){ freqCounter -= ((uint32_t)4096 << 16); }
-    
-    
+        
     if(freqCounter < freqIncr){
         freqCounter += ((uint32_t)4096 << 16);
     }
@@ -251,44 +168,27 @@ void doAudio(){
     if(CM1CON0bits.C1OUT && !cm1){
         counterSave = clockCounter;
         clockCounter = 1;
-//        shift1++;
-//        if(shift1 == 9){ shift1 = 0; }
         shift2++;
         if(shift2 == 7){ shift2 = 0; }
     }
     
-    compare = (freqCounter >> 16) & 0B00000111;
-    if(lastCompare < compare){
-        shift1 = (shift1 + 1) % 9;
-    }
-
-    lastCompare = compare;
-    
-    if(ledOff){
-        
-    }else{
-        LATB = maskB[shift1];
-        LATC = maskC1[shift1] | maskC2[shift2];
-        LATA = maskA[shift2];
-    }
-//    
-//    else if(!CM1CON0bits.C1OUT && cm1){
-//        shift1++;
-//        if(shift1 == 9){ shift1 = 0; }
-//    }
+//    compare = (freqCounter >> 16) & 0B00000111;
+////    if(lastCompare < compare){
+////        shift1 = (shift1 + 1) % 9;
+////    }
+//    shift1 += (lastCompare < compare);
+//    if(shift1 == 9){ shift1 = 0; }
+//
+//    lastCompare = compare;
    
-    
-//    if(clockCounter > 640000){
-//        counterSave = 640001;
-//        clockCounter = 1;
-//    }
+        
+    if(!dacOff){
+        DAC1DATL = (top >> 8) & 255;
+    }
     
     cm1 = CM1CON0bits.C1OUT;
     
     LATBbits.LATB5 = CM1CON0bits.C1OUT;
-  
-//    LATAbits.LATA4 = CM1CON0bits.C1OUT;
-//    LATAbits.LATA4 = !CM2CON0bits.C2OUT && !ledOff;
     
 }
 
@@ -303,26 +203,37 @@ uint8_t shiftCount = 0;
 
 void readPot(){
     
-    
-//    mask1 = (1 << shift1);
-//    mask2 = (1 << shift2);
-//    
-//    if(ledOff){
-//        mask1 = mask2 = 0;
+//    if(!ledOff){
+//        LATB = maskB[shift1];
+//        LATC = maskC1[shift1] | maskC2[shift2];
+//        LATA = maskA[shift2];
+//    }else{
+//        LATB = 0;
+//        LATC = 0;
+//        LATA = 0;
 //    }
-//    
-//    LATB = CM1CON0bits.C1OUT << 5;
-//    LATB |= (mask1 >> 4) & 0B00011111;
-//    LATC = ((mask1 & 0B00001111) << 4) | ((mask2 & 0B01111000) >> 3);
-//    LATAbits.LATA6 = (mask2 == 0B00000100);
-//    LATAbits.LATA7 = (mask2 == 0B00000010);
-//    LATAbits.LATA5 = (mask2 == 0B00000001);
+//    LATBbits.LATB5 = CM1CON0bits.C1OUT;
+    
+    mask1 = (1 << shift1);
+    mask2 = (1 << shift2);
+    
+    if(ledOff){
+        mask1 = mask2 = 0;
+    }
+    
+    LATB = CM1CON0bits.C1OUT << 5;
+    LATB |= (mask1 >> 4) & 0B00011111;
+    LATC = ((mask1 & 0B00001111) << 4) | ((mask2 & 0B01111000) >> 3);
+    LATAbits.LATA6 = (mask2 == 0B00000100);
+    LATAbits.LATA7 = (mask2 == 0B00000010);
+    LATAbits.LATA5 = (mask2 == 0B00000001);
     
     if(ADCC_IsConversionDone()){   
         uint32_t temp1 = ADCC_GetConversionResult();
         temp1 = (temp1 * temp1) >> 12;
         temp1 = (temp1 * temp1) >> 12;
         temp1 = (temp1 * temp1) >> 12;
+        temp1 = temp1 >> 1;
         potVal = temp1 + 10;
         NCO1INCU = 0;
         NCO1INCH = (potVal >> 8) & 0B00001111;
@@ -343,7 +254,7 @@ void readPot(){
         }   
         cm2 = CM2CON0bits.C2OUT;
         
-        if(decay > (rand() % 50000)){
+        if(decay > (rand() % 20000)){
             ledOff = 1;
             dacOff = 1;
         }else{
@@ -361,12 +272,12 @@ void readPot(){
             incr[!potArray][i] = expScale + 20;
         }
         
-//        temp = temp % 8;
-//        if(lastTemp < temp){
-//            shift1 = (shift1 + 1) % 9;
-//        }
-//            
-//        lastTemp = temp;
+        temp = temp % 8;
+        if(lastTemp < temp){
+            shift1 = (shift1 + 1) % 9;
+        }
+            
+        lastTemp = temp;
 //        
 //        bitMask = 1 << shiftCount;
 //        
