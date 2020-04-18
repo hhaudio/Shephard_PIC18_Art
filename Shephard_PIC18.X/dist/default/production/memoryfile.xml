@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production/Shephard_PIC18.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>131072</length>
+      <used>7225</used>
+      <free>123847</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>8192</length>
+      <used>1818</used>
+      <free>6374</free>
+    </memory>
+  </executable>
+</project>
